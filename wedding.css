@@ -1,0 +1,27 @@
+p {
+	font-family: 'Roboto';
+  	text-align: center;
+  	font-size: 60px;
+  	color: white;
+  	position: absolute;
+  	left: 0;
+  	top: 25%;
+  	width: 100%;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg { 
+    background-color: black;
+    height: 100%; 
+    background-size: cover;
+}
+
+footer {
+	font-family: 'Roboto';
+  	text-align: center;
+	font-size: 15px;
+}

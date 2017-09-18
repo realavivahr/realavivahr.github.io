@@ -2,62 +2,33 @@
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-<style>
-p {
-	font-family: 'Roboto';
-  	text-align: center;
-  	font-size: 60px;
-  	color: white;
-  	position: absolute;
-  	left: 0;
-  	top: 25%;
-  	width: 100%;
-}
-
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.bg { 
-    background-color: black;
-    height: 100%; 
-    background-size: cover;
-}
-
-footer {
-	font-family: 'Roboto';
-  	text-align: center;
-	font-size: 15px;
-}
-
-</style>
+<link rel="stylesheet" type="text/css" href="wedding.css">
 </head>
+
 <body>
+	<div class="bg">
+		<p id="timer"></p>
+	</div>
 
-<div class="bg">
-<p id="timer"></p>
-</div>
+	<footer><br>(Check back here in 2018 for more details.)<br></footer>
 
-<footer><br>(Check back here in 2018 for more details.)<br></footer>
+	<script>
+		var countDownDate = new Date("Aug 25, 2018 17:30:00").getTime();
 
-<script>
-	var countDownDate = new Date("Aug 25, 2018 17:30:00").getTime();
+		var x = setInterval(function() {
 
-	var x = setInterval(function() {
+		    var now = new Date().getTime();
+		    var distance = countDownDate - now;
+		    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		    
+		    document.getElementById("timer").innerHTML = "NOPE! <br>" + days + " days to go";
 
-	    var now = new Date().getTime();
-	    var distance = countDownDate - now;
-	    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	    
-	    document.getElementById("timer").innerHTML = "NOPE! <br>" + days + " days to go";
-
-	    if (distance < 0) {
-	        clearInterval(x);
-	        document.getElementById("timer").innerHTML = "YES!";
-	    }
-	}, 1000);
-</script>
+		    if (distance < 0) {
+		        clearInterval(x);
+		        document.getElementById("timer").innerHTML = "YES!";
+		    }
+		}, 1000);
+	</script>
 
 </body>
 </html>
