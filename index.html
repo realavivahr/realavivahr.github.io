@@ -6,14 +6,18 @@
 </head>
 
 <body>
-	<div class="bg">
+	<div class="bg" id="bg">
 		<p id="timer"></p>
 	</div>
 
 	<footer><br>(Check back here in 2018 for more details.)<br></footer>
 
 	<script>
-		var countDownDate = new Date("Aug 25, 2018 17:30:00").getTime();
+		var colors = ['#A9A9A9', 'black', '#827994', '#A5AF72','#DAA520'];
+		var random_color = colors[Math.floor(Math.random() * colors.length)];
+		document.getElementById('bg').style.backgroundColor = random_color;
+
+		var countDownDate = new Date("Aug 25, 2018 17:30:00");
 
 		var x = setInterval(function() {
 
@@ -27,7 +31,8 @@
 		        clearInterval(x);
 		        document.getElementById("timer").innerHTML = "YES!";
 		    }
-		}, 1000);
+		});
+
 	</script>
 
 </body>
