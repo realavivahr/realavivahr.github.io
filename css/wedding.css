@@ -1,0 +1,97 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto';
+  background-color: #A5AF72;
+}
+
+#timer {
+	text-align: center;
+	left: 0;
+	top: 5%;
+	width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  color: #330f53;
+}
+
+#nav {
+  width: 20%;
+  min-width: 100px;
+  height: 100%;
+  margin: 30px;
+  position:fixed!important;
+  z-index:1;
+  overflow:auto;
+}
+
+div.container {
+  width: 50%;
+  min-width: 400px;
+  margin-left: 30%;
+  padding-top: 20px;
+}
+
+iframe {
+  width: 450px;
+  height: 300px; 
+  margin: 0 auto;
+  display: block;
+  float: right;
+  padding: 5px;
+}
+
+img {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+a {
+  font-weight: 3;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font: 200 20px/1.5 ;
+  border-bottom: 1px solid #ccc;
+  color: white;
+  text-transform: capitalize;
+}
+
+li:last-child {
+  border: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+  display: block;
+  width: 200px;
+}
+
+li a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}

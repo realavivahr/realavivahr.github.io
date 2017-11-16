@@ -2,20 +2,31 @@
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-<link rel="stylesheet" type="text/css" href="wedding.css">
+<link rel="stylesheet" type="text/css" href="css/wedding.css">
 </head>
 
 <body>
-	<div id="bg">
-		<p id="timer"></p>
+	<div id="nav">
+	  <ul>
+	    <li><a href="wedding.html">Our Wedding</a></li>
+		<li><a href="travel.html">Travel</a></li>
+		<li><a href="rsvp.html">RSVP</a></li>
+		<li><a href="registry.html">Registry</a></li>
+	  </ul>
 	</div>
 
-	<footer><br>(Check back here in 2018 for more details.)<br></footer>
+	<div class="container">
+
+		<p id="timer"></p>
+
+	</div>
+		
 
 	<script>
-		var colors = ['#A9A9A9', '#000000', '#827994', '#A5AF72','#DAA520'];
+	/**
+		var colors = ['#827994', '#0abab5', '#ff6666', '#A5AF72','#DAA520'];
 		var random_color = colors[Math.floor(Math.random() * colors.length)];
-		document.getElementById('bg').style.backgroundColor = random_color;
+		document.body.style.backgroundColor = random_color; **/
 
 		var countDownDate = new Date("Aug 25, 2018 17:30:00");
 
@@ -25,7 +36,7 @@
 		    var distance = countDownDate - now;
 		    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 		    
-		    document.getElementById("timer").innerHTML = "NOPE! <br>" + days + " days to go";
+		    document.getElementById("timer").innerHTML = "<h1>NOPE!</h1>" + "<img src='images/background-draft.png'/> <h3>" + days + " days to go.</h3>";
 
 		    if (distance < 0) {
 		        clearInterval(x);
