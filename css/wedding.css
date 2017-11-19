@@ -7,8 +7,11 @@ body, html {
 #timer {
 	left: 0;
 	width: 100%;
-  background-image: url('images/background-draft.png');
-  background-repeat: no-repeat;
+}
+
+#timer img {
+  width: 500px;
+  display: block;
 }
 
 h1 {
@@ -34,6 +37,7 @@ p.logo a:hover {
 #nav {
   width: 20%;
   min-width: 100px;
+  max-width: 175px;
   height: 100%;
   background-color: #A5AF72;
   padding: 30px;
@@ -58,11 +62,6 @@ iframe {
   display: block;
   float: right;
   padding: 5px;
-}
-
-img {
-  width: 300px;
-  display: block;
 }
 
 a {

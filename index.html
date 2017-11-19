@@ -17,7 +17,7 @@
 	  </ul>
 	</div>
 
-	<div class="container">
+	<div class="container" id="major">
 
 		<p id="timer"></p>
 
@@ -25,10 +25,12 @@
 		
 
 	<script>
-	/**
-		var colors = ['#827994', '#0abab5', '#ff6666', '#A5AF72','#DAA520'];
-		var random_color = colors[Math.floor(Math.random() * colors.length)];
-		document.body.style.backgroundColor = random_color; **/
+	
+		var images = ['images/Rutkin_9576.jpg', 'images/Rutkin_9589.jpg',
+		'images/Rutkin_9638.jpg', 'images/Rutkin_9841.jpg', 'images/Rutkin-9859.jpg',
+		'images/Rutkin-9897.jpg'];
+		var random_image = images[Math.floor(Math.random() * images.length)];
+		/** document.body.style.backgroundColor = random_color; */
 
 		var countDownDate = new Date("Aug 25, 2018 17:30:00");
 
@@ -38,7 +40,7 @@
 		    var distance = countDownDate - now;
 		    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 		    
-		    document.getElementById("timer").innerHTML = "<h2> Nope! " + days + " days to go.</h2>" + "<img src='images/background-draft.png'/>" ;
+		    document.getElementById("timer").innerHTML = "<h2> Nope! " + days + " days to go.</h2> <img src='" + random_image + "'/>" ;
 
 		    if (distance < 0) {
 		        clearInterval(x);
