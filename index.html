@@ -113,14 +113,18 @@
 	var gifs = [
 
 		//Niles
-		'<iframe src="https://giphy.com/embed/xUA7aRzC18VKPDgFfG" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+		'<iframe src="https://giphy.com/embed/xUA7aRzC18VKPDgFfG" width="480" height="269" align="middle" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
 
 		//dog
-		'<iframe src="https://giphy.com/embed/TNljdP07jRaI8" width="480" height="356" frameBorder="0" allowFullScreen></iframe>',
+		'<iframe src="https://giphy.com/embed/TNljdP07jRaI8" width="480" height="356" align="middle" frameBorder="0" allowFullScreen></iframe>',
+		
+		//Friends
+		'<<iframe src="https://giphy.com/embed/S5f5fpGWkx97O" width="480" height="409" align="middle" frameBorder="0" allowFullScreen></iframe>',
 
 		//Office
-		'<iframe src="https://giphy.com/embed/5vef4sn8zhnlC" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>'];
-		var random_gif = gifs[Math.floor(Math.random() * gifs.length)];
+		'<iframe src="https://giphy.com/embed/5vef4sn8zhnlC" width="480" height="270" align="middle"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe>'];
+		
+	var random_gif = gifs[Math.floor(Math.random() * gifs.length)];
 
 	document.getElementById("gif").innerHTML = random_gif;
 
