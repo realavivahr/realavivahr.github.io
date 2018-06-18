@@ -1,34 +1,74 @@
-<!DOCTYPE HTML>
+
+<!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/wedding.css">
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Muli:regular,bold" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="hover.css" rel="stylesheet" media="all">
 
+</head>
 <body>
 
-	<div id="nav">
-	  <p class="logo"><a href="index.html">ALI +<br>AVIVA</a></p>
-	  <ul>
-	    <li><a href="wedding.html">Our Wedding</a></li>
-		<li><a href="travel.html">Travel</a></li>
-		<li><a href="registry.html">Registry</a></li>
-	  </ul>
+	<div class="bgimg-1">
+		<div class="caption">
+	    	<span class="border" id="timer"></span>
+	    	<button onclick="scrollFunction()" id="myBtn" title="Scroll"><i class="arrow down"></i></button>
+	  	</div>
 	</div>
 
-	<div class="container" id="major">
+	<div class="second">
 
-		<p id="timer"></p>
+		<h1>The big day</h1>
 
-	</div>
+		<h3>We're getting married at</h3>
+		<h2><a href="http://piercehouse.com">Pierce House</a><br>
+		17 Weston Road, Lincoln, MA</h2>
 		
+		<h3>on August 25, 2018.<br><br>
+			The ceremony will begin at 5 p.m., with dinner and dancing to follow.<br>
+			The dress code is cocktail attire.</h3>
 
-	<script>
-	
-		var images = ['images/Optimized-Rutkin_9576.jpg', 'images/Optimized-Rutkin_9589.jpg',
-		'images/Optimized-Rutkin_9638.jpg', 'images/Optimized-Rutkin_9841.jpg', 'images/Optimized-Rutkin_9859.jpg','images/Optimized-Rutkin_9897.jpg'];
-		var random_image = images[Math.floor(Math.random() * images.length)];
-		/** document.body.style.backgroundColor = random_color; */
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23561.880979765072!2d-71.3215668283176!3d42.422729939034106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e39b71c6f6098f%3A0x18a901b4a6afebde!2sPierce+House!5e0!3m2!1sen!2sus!4v1529288132535" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+	</div>
+
+	<div class="third">
+
+		<h1>How to get there</h1>
+
+		<h3>Boston Logan International Airport is 22 miles away.</h3><br>
+
+		<h3>Rooms at the following hotels have been reserved for our guests at a discounted rate.<br></h3><br>
+
+		<h2><a href="https://www.starwoodmeeting.com/events/start.action?id=1711206415&key=25567316">Aloft Lexington</a></h2>
+		
+		<h4>727 Marrett Road - A<br>Lexington, MA 02421<br>(781) 761-1700<br></h4><br>
+
+		<h2><a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Bruzek-Rutkin%20Wedding%5EBOSWM%60BRUBRUA%7CBRUBRUB%60135.00%60USD%60false%605%608/24/18%608/26/18%607/26/18&app=resvlink&stop_mobi=yes">Courtyard by Marriott Waltham</a></h2>
+		
+		<h4>387 Winter St<br>Waltham, MA 02451<br>(781) 419-0900<br></h4><br>
+
+		<h3>We will have Uber and Lyft codes available for guests needing transportation to and from our wedding. Please check back here in August for more details.</h3>
+
+	</div>
+
+	<div>
+
+		<h1>And more</h1>
+
+		<h3>We're registered at <a href="https://www.amazon.com/wedding/aviva-rutkin-alison-bruzek-lincoln-august-2018/registry/2FHK7Q74CD1RA" target='_blank'>Amazon</a> and <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546043497&eventType=Wedding&pwsurl=" target='_blank'>Bed Bath & Beyond</a>.</h3><br>
+
+		<h3><a href="mailto:avivahr@gmail.com">Please email us</a> if you have any questions.</h3>
+
+		<div id="gif"></div>
+
+		<br><br>
+	</div>
+
+</div>
+
+<script>
 
 		var countDownDate = new Date("Aug 25, 2018 17:30:00");
 
@@ -38,15 +78,54 @@
 		    var distance = countDownDate - now;
 		    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 		    
-		    document.getElementById("timer").innerHTML = "<h2> Nope! " + days + " days to go.</h2> <img src='" + random_image + "'/>" ;
+		    document.getElementById("timer").innerHTML = "Nope! " + days + " days to go." ;
 
 		    if (distance < 0) {
 		        clearInterval(x);
-		        document.getElementById("timer").innerHTML = "YES!";
+		        document.getElementById("timer").innerHTML = "Yes!";
 		    }
 		});
 
-	</script>
+</script>
+
+<script>
+
+	// button disappears when you scroll 
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	  var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos < currentScrollPos) {
+	    document.getElementById("myBtn").style.display = "none";
+	  }
+	  prevScrollpos = currentScrollPos;
+	}
+
+	// button boosts you down the page when you click (disappear on mobile?)
+	function scrollFunction(){
+	   	window.scroll({
+			  top: 600, 
+			  left: 0, 
+			  behavior: 'smooth' 
+			});
+	}
+</script>
+
+<script>
+	var gifs = [
+
+		//Niles
+		'<iframe src="https://giphy.com/embed/xUA7aRzC18VKPDgFfG" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+
+		//dog
+		'<iframe src="https://giphy.com/embed/TNljdP07jRaI8" width="480" height="356" frameBorder="0" allowFullScreen></iframe>',
+
+		//Office
+		'<iframe src="https://giphy.com/embed/5vef4sn8zhnlC" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>'];
+		var random_gif = gifs[Math.floor(Math.random() * gifs.length)];
+
+	document.getElementById("gif").innerHTML = random_gif;
+
+</script>
 
 </body>
 </html>
