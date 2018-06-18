@@ -6,6 +6,7 @@
 	  letter-spacing: 3px;
 }
 
+iframe { margin: 0 auto; }
 
 body, html {
   height: 100%;
