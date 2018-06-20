@@ -1,9 +1,12 @@
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+
+	.caption span.border {
+		font-size: 15px;
+	}
 
 	body {
 		width: 100%;
 		height: auto;
-		font-size: 1.0em;
 	}
 
 	div {
@@ -13,7 +16,8 @@
 	}
 
 	.bgimg-1 {
-		background-image: none;
+		max-height: 200px;
+		background-image: none!important;
 	}
 
 	#myBtn {
