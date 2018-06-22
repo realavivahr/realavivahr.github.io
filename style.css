@@ -1,11 +1,12 @@
 @media screen and (max-device-width:640px), screen and (max-width:640px) {
 
 	.caption span.border {
-		font-size: 15px;
+		font-size: 10px;
 	}
 
 	body {
 		width: 100%;
+		font-size: 1 rem;
 		height: auto;
 		background-image: none!important;
 	}
