@@ -1,4 +1,4 @@
-@media (max-width:600px) {
+@media screen and (max-device-width:640px), screen and (max-width:640px) {
 
 	.caption span.border {
 		font-size: 15px;
