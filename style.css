@@ -6,10 +6,13 @@
 
 	body {
 		width: 100%;
-		font-size: 1 rem;
+		font-size: 16px;
 		height: auto;
 		background-image: none!important;
 	}
+	
+	h1 {font-size: 250%;}
+	h2,h3,h4 {font-size: 200%;}
 
 	div {
 		overflow-x: hidden;
