@@ -1,49 +1,40 @@
-@media screen and (min-width: 1024px){
-	body {
-		height: 100%;
-	}
-	
+@media only screen and (max-width:600px) {
+
 	.caption span.border {
-		font-size: 25px;
-	}
-	
-	#myBtn {
-	position: fixed; /* Fixed/sticky position */
-	bottom: 20px; /* Place the button at the bottom of the page */
-	right: 30px; /* Place the button 30px from the right */
-	z-index: 99; /* Make sure it does not overlap */
-	border: none; /* Remove borders */
-	outline: none; /* Remove outline */
-	color: white; /* Text color */
-	cursor: pointer; /* Add a mouse pointer on hover */
-	padding: 15px; /* Some padding */
-	border-radius: 5px; /* Rounded corners */
-	font-size: 18px; /* Increase font size */
+		font-size: 15px;
 	}
 
-	#myBtn:hover {
-		background-color: #572233;
+	body {
+		width: 100%;
+		height: auto;
+		background-image: none!important;
 	}
-	
+
+	div {
+		overflow-x: hidden;
+		overflow-y: scroll;
+  		-webkit-overflow-scrolling: touch; 
+		background-image: none!important;
+	}
+
 	.bgimg-1 {
-		background-image: url("Optimized-Rutkin_9897.jpg");
-		height: 100%;
-		opacity: 0.8;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
+		max-height: 200px;
+		background-image: none!important;
+	}
+
+	#myBtn {
+		display: none;
 	}
 }
 
 * {
 	-moz-box-sizing: border-box;
-    	box-sizing: border-box;
+    box-sizing: border-box;
   	margin: 0;
 }
 
 body, html {
-	width: 100%;
-	height: auto;
+	height: 100%;
 	font-family: 'Muli', sans-serif;
 	background: #DFDCDE;
 }
@@ -83,13 +74,17 @@ a:hover {
 	background-color: #572233;
 	color: #fff;
 	padding: 18px;
-	font-size: 15px;
+	font-size: 25px;
 	letter-spacing: 3px;
 }
 
 .bgimg-1 {
-	max-height: 200px!important;
-	background-image: none!important;
+  	background-image: url("Optimized-Rutkin_9897.jpg");
+  	height: 100%;
+  	opacity: 0.8;
+  	background-position: center;
+ 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 iframe { 
@@ -103,7 +98,6 @@ div {
 	text-align: center;
 	padding: 30px;
 }
-
 
 div.third {
 	background-color: #975a6e;
@@ -124,8 +118,22 @@ div #gif {
 }
 
 #myBtn {
-	display: none;
-	}
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 5px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+	background-color: #572233;
+}
 
 i {
 	border: solid black;
