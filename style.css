@@ -18,7 +18,8 @@
 	}
 
 	.bgimg-1 {
-		height: 400px;
+		min-height: 100px;
+		max-height: 200px;
 		background-image: none!important;
 	}
 
