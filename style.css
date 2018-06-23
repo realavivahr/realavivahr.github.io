@@ -3,6 +3,10 @@
 	.caption span.border {
 		font-size: 10px;
 	}
+	
+	.caption {
+		position: static;
+	}
 
 	body {
 		width: 100%;
