@@ -23,6 +23,7 @@
 
 	.bgimg-1 {
 		padding: 30px;
+		max-height: 200px;
 		background-image: none!important;
 	}
 
