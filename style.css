@@ -1,4 +1,4 @@
-@media screen and (max-device-width:640px), screen and (max-width:640px) {
+@media screen and (max-device-width:768px), screen and (max-width:768px) {
 
 	.caption span.border {
 		font-size: 10px;
@@ -22,7 +22,10 @@
 	}
 
 	.bgimg-1 {
-		max-height: 200px;
+		width: 100%;
+		height: auto;
+		text-align: center;
+		padding: 30px;
 		background-image: none!important;
 	}
 
