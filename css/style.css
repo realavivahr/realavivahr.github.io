@@ -1,0 +1,310 @@
+/* COLORS */
+
+:root {
+  --dark-blue: #00303f;
+  --yellow: #dcae1d;
+  --green: #7a9d96;
+  --light-blue: #cae4db;
+  /* also white */
+}
+
+
+/* GENERAL STUFF */
+
+* { 
+  border: 0;
+  margin: 0;
+  padding: 0; 
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body { 
+  width: 100%;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  position: absolute;
+  overflow: visible;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; 
+}
+
+html { 
+  font-size: 75% 
+}
+
+body { 
+  background-color: white;
+  font-size: 1.8rem;
+  color: var(--light-blue); 
+}
+
+
+/* DIVs */
+
+.main {
+  background-color:var(--dark-blue);
+  margin: 3.6rem auto 0px;
+  padding: 5.4rem 5rem 5rem 5rem;
+  height: auto;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  max-width: 1440px; 
+}
+
+.wrapper { 
+  float: left;
+  width: 80%;
+  margin: 0 5%;
+  margin-top: 20px;
+  padding-bottom: 7.2rem; 
+}
+
+#return-button {
+  padding-bottom: 20px;
+}
+
+
+/* TEXT */
+
+h1, h2, h3 { 
+  font-weight: heavy; /* kill? */
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+   transition: opacity 0.5s ease-in-out; }
+
+h1 { 
+  font-size: 5.25rem; 
+}
+
+h2 { 
+  font-size: 4.8rem;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+}
+
+#currentPage { 
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  background: var(--green);
+  font-weight:normal;
+  color:white;
+}
+
+h4 {
+  font-size: 2.2rem; 
+  font-weight: lighter;
+  color:white;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+h4.title {
+  background: var(--dark-blue);
+  padding: 8px;
+  font-size: 1.6rem;
+}
+
+span { 
+  font-size: 2rem;
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  padding: 5px 10px;
+}
+
+ul, li { 
+  list-style: none; 
+  color: white;
+}
+
+li {
+  font-size: 2.2rem;
+}
+
+
+/* LINKS */
+
+a { 
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+a.menu-button {
+  color: var(--yellow);
+  font-size:2.2rem;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 20px;
+}
+
+a.menu-button-social {
+  color: var(--yellow);
+  font-size:2.2rem;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 2px;
+}
+
+a:hover { 
+  font-weight: bold;
+}
+
+/* Grow Rotate (from hover.css) */
+i {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+i:hover, i:focus, i:active {
+  -webkit-transform: scale(1.5) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+}
+
+
+/* SPECIAL CASE: STORY PAGE */
+
+.column h4:hover {
+  background: var(--green);
+}
+
+.label {
+  margin-bottom: 20px;
+}
+
+#story-page {
+  padding: 2.4rem 0 0 0;
+  background-color:white;
+}
+
+.subheader {
+  padding: 30px 0;
+}
+
+.subheader-first {
+  padding: 0 0 30px 0;
+}
+
+.main-stories { 
+  background-color: var(--green);
+  margin: 3.6rem auto 0px;
+  padding: 2.4rem;
+  height: auto;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  max-width: 1440px; 
+}
+
+/*Grid*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px 30px 0;
+}
+
+img {
+  width: 100%;
+  padding-top: 20px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter:grayscale(1);
+}
+
+.column img:hover {
+  /** filter:grayscale(0); ** PHASING OUT FOR NOW */
+}
+
+.no-photo {
+  padding: 20px 0 0 0;
+}
+
+
+/* Screens TO BE UPDATED */ 
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+                          
+                              html { font-size:62.5%; }
+                              .main { max-width: 1000px; }
+
+@media screen and (max-width: 1024px) {
+
+                              html { font-size:60% } }
+
+@media screen and (max-width: 960px) {
+
+                              html { font-size:55% } }
+
+@media screen and (max-width: 800px) {
+
+                              html { font-size:52.5%; }
+                              h1,h2 { font-size:4.8rem; }
+
+@media screen and (max-width: 650px) {
+
+  html                      { font-size:52.5%; }
+  .main                     { padding-top:10rem; }
+  h1,h2                     { font-size:3.6rem; }
+  h3                        { font-size:3rem; }
+}
+
+@media screen and (max-width: 550px) {
+
+  html                      { font-size:52.5%; }
+  h1,h2                     { font-size:2.8rem; }
+  h3                        { font-size:2rem; }
+
+@media screen and (device-aspect-ratio: 40/71) and (orientation : landscape) {
+   
+   html                     { font-size:25%; } }
